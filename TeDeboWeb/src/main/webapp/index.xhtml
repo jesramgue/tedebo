@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:h="http://java.sun.com/jsf/html"  
+      xmlns:f="http://java.sun.com/jsf/core"  
+      xmlns:p="http://primefaces.org/ui">
+    <head>
+        <title>TeDebo - ¡¡¡Gestiona tus deudas!!!</title>
+    </head>
+    <body>
+    <h:form id="FormLogin" prependId="false">
+        <p:growl id="growl"/>
+        <p:panelGrid id="Login" columns="3"> 
+            <h:outputLabel id="numberLabel" >NºTeléfono</h:outputLabel>
+            <p:inputText id="number" required="true" requiredMessage="Es necesario que escribas tu número de teléfono" title="NºTeléfono">
+                <p:ajax event="blur" update="growl msgNumber" />
+            </p:inputText>
+            <p:message id="msgNumber" for="number" />
+            <h:outputLabel id="passwordLabel" >Password</h:outputLabel>
+            <p:password id="password" required="true" requiredMessage="!No olvides escribir tu contraseña!" title="Password">
+                <p:ajax event="blur" update="growl msgPassword" />
+            </p:password>
+            <p:message id="msgPassword" for="password" />
+            <p:button id="buttonAceptar" value="Aceptar"/>
+        </p:panelGrid>
+    </h:form> 
+    <p:panelGrid id="Contacts" columns="1" style="display: none;"> 
+        <!--
+        <p:dataTable id="contactsTable" selectionMode="single" value="">
+            
+        </p:dataTable> 
+        -->
+    </p:panelGrid>
+</body>
+</html>
