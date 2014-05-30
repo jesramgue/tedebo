@@ -10,8 +10,18 @@ In this page we will detail all communication protocol thats we will use to do d
 Server will use REST messages. All data messages will be written in JSON language and codified with the *best/fastest* encryptation function.
 
 = Message List =
-  * InitializeContacts 
-  * SyncContacs
+== Account Management ==
   * CreateAccount
+  * CreateAccountResponse
   * DeleteAccount
-  * ModidyContactData
+  * DeleteAccountResponse
+  * ModifyAccount
+  * ModifyAccountResponse
+== Contacts Management ==
+  * InitializeContacts 
+  * InitializeContactsResponse 
+  * SyncContacs
+  * SyncContacsResponse
+  * ModifyContacs
+  * ModifyContacsResponse
+
