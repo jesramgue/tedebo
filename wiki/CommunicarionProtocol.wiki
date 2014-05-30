@@ -7,7 +7,7 @@ In this page we will detail all communication protocol thats we will use to do d
 
 = Details =
 
-All data messages will be written in JSON language and codified with the *best/fastest* encryptation function.
+Server will use REST messages. All data messages will be written in JSON language and codified with the *best/fastest* encryptation function.
 
 = Message List =
   * InitializeContacts 
@@ -15,4 +15,3 @@ All data messages will be written in JSON language and codified with the *best/f
   * CreateAccount
   * DeleteAccount
   * ModidyContactData
-
