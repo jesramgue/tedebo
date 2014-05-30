@@ -10,6 +10,9 @@ In this page we will detail all communication protocol thats we will use to do d
 Server will use REST messages. All data messages will be written in JSON language and codified with the *best/fastest* encryptation function.
 
 = Message List =
+== Token Management ==
+  * GetToken
+  * GetTokenResponse
 == Account Management ==
   * CreateAccount
   * CreateAccountResponse
@@ -24,4 +27,3 @@ Server will use REST messages. All data messages will be written in JSON languag
   * SyncContacsResponse
   * ModifyContacs
   * ModifyContacsResponse
-
