@@ -1,0 +1,18 @@
+#summary Communicarion Protocol
+#labels Phase-Design,Communication,Protocol
+
+= Introduction =
+
+In this page we will detail all communication protocol thats we will use to do data exchange between the mobile phone and the server. 
+
+= Details =
+
+All data messages will be written in JSON language and codified with the *best/fastest* encryptation function.
+
+= Message List =
+  * InitializeContacts 
+  * SyncContacs
+  * CreateAccount
+  * DeleteAccount
+  * ModidyContactData
+
